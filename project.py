@@ -2,11 +2,11 @@ responses =["welcome to smart calculator","my name is NIK","Thanks","sorry this 
 def extract_number_from_text(text):
   l=[]
   for t in text.split(' '):
-    try:
-      l.append(float(t))
-    except ValueError:
-      pass
-      return(l)
+      try:
+         l.append(float(t))
+      except ValueError:
+         pass
+  return(l)
 def lcm(a,b):
   l=a if a>b else b
   while l<a*b:
@@ -46,8 +46,8 @@ def sorry():
 operations ={"PLUS":add,"ADDITION":add,"SUM":add,"MINUS":sub,"SUBTRACTION":sub, "MULTIPLY":multiply,"MULTIPLICATION":multiply,"DIVIDE":divison}
 commands = {"NAME":myname,"END":end,"EXIT":end,"close":end}
 for keys in operations.keys():
- print(responses[0])
- print(responses[1])
+print(responses[0])
+print(responses[1])
 while True:
   print()
 text=input("enter some text")
