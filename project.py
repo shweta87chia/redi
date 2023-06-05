@@ -46,5 +46,25 @@ def sorry():
 operations ={"PLUS":add,"ADDITION":add,"SUM":add,"MINUS":sub,"SUBTRACTION":sub, "MULTIPLY":multiply,"MULTIPLICATION":multiply,"DIVIDE":divison}
 commands = {"NAME":myname,"END":end,"EXIT":end,"close":end}
 for keys in operations.keys():
+ print(responses[0])
+ print(responses[1])
+while True:
+  print()
+text=input("enter some text")
+for word in text.split(' '):
+  if word.upper() in operations.keys():
+    try:
+     l=extract_number_from_text()
+     r=operations[word.upper()](l[0],l[1])
+     print(r)
+    except:
+      print("something is wrong please retry")
+    finally:
+      break
+  elif word.upper() in commands.keys():
+      commands [word.upper()]()
+
+  else:
+    sorry()
 
 
