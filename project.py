@@ -32,3 +32,14 @@ def multiply(a,b):
 def divison(a,b):
   return a/b
 
+def end():
+  print(responses[2])
+  input("print enter key to exit")
+  exit()
+
+def myname():
+  print(responses[1])
+
+def sorry():
+  print(responses[3])
+
