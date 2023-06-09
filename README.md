@@ -8,6 +8,6 @@ commands = {"NAME":myname,"END":end,"EXIT":end,"close":end}
 if user input contains a text which matches any of the key from opearions dict, a corresponding function for value of the matched key choosen.
 operand are extracted and result of the opration is printed.
 incase of any unexpected input either the program exit or will ask user to reinter the input.
-
+if incase of a user input contains any words like exit end then program is exited.
 
 
