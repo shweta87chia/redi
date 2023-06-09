@@ -9,5 +9,6 @@ if user input contains a text which matches any of the key from opearions dict, 
 operand are extracted and result of the opration is printed.
 incase of any unexpected input either the program exit or will ask user to reinter the input.
 if incase of a user input contains any words like exit end then program is exited.
+![image](https://github.com/shweta87chia/redi/assets/129319975/52e4419d-fe13-4975-9fc4-0d5e93c4352e)
 
 
